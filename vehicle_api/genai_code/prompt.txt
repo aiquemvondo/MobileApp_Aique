@@ -1,0 +1,25 @@
+Generate a complete Vehicle Manufacturer Management REST API using Python and FastAPI.
+Requirements:
+
+1. Use an in-memory database with Python dictionaries to store manufacturers and their vehicles.
+2. Implement all CRUD operations (Create, Read, Update, Delete) for manufacturers and vehicles.
+3. Each manufacturer must have an ID, name, and country.
+4. Each vehicle must have an ID, manufacturer ID, model, year, and price.
+5. Implement REST endpoints for creating, retrieving, updating, and deleting manufacturers and vehicles. Include an endpoint to list all vehicles belonging to a particular manufacturer.
+6. Use Pydantic models for request validation and return appropriate HTTP status codes.
+7. When a manufacturer is deleted, automatically delete its associated vehicles.
+8. Follow the standard uv package project structure created with:
+uv init --package vehicle_api
+9. Place the FastAPI application code in:
+src/vehicle_api/main.py
+10. Use:
+uv add "fastapi[standard]"
+to install FastAPI.
+11. Configure pyproject.toml with:
+[tool.fastapi]
+entrypoint = "vehicle_api.main"
+12. The application must run using:
+uv run fastapi dev
+13. Ensure all endpoints are accessible and testable through Swagger UI at http://localhost:8000/docs.
+
+Provide the complete Python source code, required configuration, and clear instructions for running and testing the API.
